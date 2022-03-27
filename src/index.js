@@ -1,10 +1,14 @@
 import './style.css';
-import OptionsSVG from './options.svg';
-import LogoSVG from "./logo.svg";
-import BackgroundImage from "./background.jpg";
+import { ComponentService } from './component.service';
 
-(() => {
-    document.querySelector(".options-svg").src = OptionsSVG;
-    document.querySelector(".logo-svg").src = LogoSVG;
-    document.querySelector(".background-img").src = BackgroundImage;
-})();
+const componentService = new ComponentService();
+
+const run = (componentService) => {
+    componentService.renderMainParts();
+    componentService.renderHeader();
+    componentService.renderBody();
+    componentService.renderBackground();
+    componentService.renderImages();
+}
+
+run(componentService);
