@@ -126,18 +126,13 @@ a {
     border: solid 1px var(--main-color);
 }
 
-.menu-container {
-    height: 100%;
-    position: relative;
-}
-
 .menu {
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    max-height: 60vh;
     overflow-y: auto;
-    position: absolute;
 
     padding-top: calc(var(--padding-main) * 2);
     gap: calc(var(--padding-main) * 2);
