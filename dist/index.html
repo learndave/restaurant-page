@@ -5,7 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Restaurant Page</title>
-    <link rel="stylesheet" href="../src/style.css">
     <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">  -->
@@ -15,12 +14,12 @@
         <div class="header">
             <div class="logo">
                 <a href="#">
-                    <img src="../src/logo.svg" alt="logo" id="logo">
+                    <img class="logo-svg" alt="logo" id="logo">
                 </a>
             </div>
-            <div class="menu">
+            <div class="options">
                 <a href="#">
-                    <img class="menu-svg" src="../src/menu.svg" alt="menu-icon" id="menu-icon">
+                    <img class="options-svg" alt="options-icon" id="options-icon">
                 </a>
             </div>
         </div>
@@ -29,9 +28,57 @@
                 SLICE N' SLURP
             </div>
             <div class="tabs">
-                <a href="#" class="tab main-menu">PIZZA</a>
-                <a href="#" class="tab lunch-menu">PASTA</a>
-                <a href="#" class="tab drinks-menu">DRINKS</a>
+                <button onclick="showPizzaMenu()" class="tab pizza">PIZZA</button>
+                <button onclick="showPastaMenu()" class="tab pasta selected">PASTA</button>
+                <button onclick="showDrinksMenu()" class="tab drinks">DRINKS</button>
+            </div>
+            <div class="menu-container">
+                <div class="menu pastaMenu">
+                    <a href="#" class="menu-item">
+                        <div class="menu-item-title">
+                            Pasta 1
+                        </div>
+                        <div class="menu-item-description">
+                            This is a delicious pasta.
+                        </div>
+                        <div class="menu-item-price">
+                            $30.00
+                        </div>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <div class="menu-item-title">
+                            Pasta 2
+                        </div>
+                        <div class="menu-item-description">
+                            This is a delicious pasta.
+                        </div>
+                        <div class="menu-item-price">
+                            $30.00
+                        </div>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <div class="menu-item-title">
+                            Pasta 3
+                        </div>
+                        <div class="menu-item-description">
+                            This is a delicious pasta.
+                        </div>
+                        <div class="menu-item-price">
+                            $30.00
+                        </div>
+                    </a>
+                    <a href="#" class="menu-item">
+                        <div class="menu-item-title">
+                            Pasta 4
+                        </div>
+                        <div class="menu-item-description">
+                            This is a delicious pasta.
+                        </div>
+                        <div class="menu-item-price">
+                            $30.00
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
         <div class="background">
