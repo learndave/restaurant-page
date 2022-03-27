@@ -131,8 +131,9 @@ a {
     flex-direction: column;
     align-items: center;
 
-    max-height: 60vh;
-    overflow-y: scroll;
+    max-height: 70vh;
+    overflow-y: auto;
+    overflow-x: hidden;
 
     padding-top: calc(var(--padding-main) * 2);
     gap: calc(var(--padding-main) * 2);
@@ -198,7 +199,7 @@ a {
     .menu-item {
         display: flex;
         flex-direction: column;
-        width: max(60vw, 300px);
+        width: max(55vw, 300px);
     }
 
     .menu-item-title {
