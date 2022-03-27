@@ -132,7 +132,7 @@ a {
     align-items: center;
 
     max-height: 60vh;
-    overflow-y: auto;
+    overflow-y: scroll;
 
     padding-top: calc(var(--padding-main) * 2);
     gap: calc(var(--padding-main) * 2);
